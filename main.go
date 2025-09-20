@@ -1,5 +1,6 @@
 package main
 
+// all the imports
 import (
 	"encoding/json"
 	//"log"
@@ -234,7 +235,7 @@ func main() {
 
 		c.JSON(200, results)
 	})
-
+	// fix the episode handler (done)
 	router.GET("/api/recommendations", func(c *gin.Context) {
 		favorite := c.Query("favorite_movie")
 		if favorite == "" {
