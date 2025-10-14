@@ -14,7 +14,6 @@ Perfect for assignments, demo projects, or as a backend learning exercise!
 
 1. **Clone the repository:**
 2. **Install dependencies:**
-(If you don’t already have them)
 
 
 3. **Create a `.env` file with your OMDb API key:**
@@ -33,16 +32,11 @@ The API will listen on `http://localhost:8080`.
 
 ### 3. Genre Movies  
 `GET /api/movies/genre?genre=Action`
-- **Returns**: Top 15 movies in that genre (from a preset pool), sorted by IMDb rating.
+- **Returns**: Top 15 movies in that genre frm a pool, sorted by IMDb rating.
 
 ### 4. Recommendations  
 `GET /api/recommendations?favorite_movie=Inception`
 - **Returns**: Up to 20 recommended movies, prioritized by shared genre, director, and actors.
 
-## Notes
-
-- `.env` is in `.gitignore` and **should NOT be committed** to protect your API key!
-- This project is for learning/demo—feel free to expand the preset movie pool in code for richer results.
-- For any API errors (not found, decode fail), the server returns a useful error message and HTTP status.
 
 ---
